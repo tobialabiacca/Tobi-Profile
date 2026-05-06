@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tobi Alabi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #ececec, #dcdcdc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 30px 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+  }
+
+  .profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white;
+  }
+
+  h1 {
+    margin: 5px 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .title {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .info {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .primary {
+    background: black;
+    color: white;
+  }
+
+  .secondary {
+    background: rgba(0,0,0,0.05);
+    color: black;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <img src="profile.jpg" class="profile">
+
+  <h1>Tobi Alabi</h1>
+
+  <div class="title">Finance Consultant</div>
+
+  <div class="info">
+    +447943722218<br>
+    tobialabiacca@gmail.com
+  </div>
+
+  <a href="tel:+447943722218" class="button primary">📞 Call</a>
+  <a href="mailto:tobialabiacca@gmail.com" class="button primary">✉️ Email</a>
+  <a href="https://stratgist.com" class="button secondary">🌐 Website</a>
+  
+  <!-- LINKEDIN ADDED -->
+  <a href="https://www.linkedin.com/in/tobi-moses-alabi-acca-334945a0/" class="button secondary">💼 LinkedIn</a>
+
+  <a href="contact.vcf" class="button secondary">⬇️ Save Contact</a>
+
+  <div class="footer">Tap card to connect</div>
+
+</div>
+
+</body>
+</html>
